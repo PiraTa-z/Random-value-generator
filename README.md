@@ -23,5 +23,8 @@ Generates random value, based on a regular expression
 
 
 #EXAMPLES:
-[link text itself]: http://www.reddit.com
-[http://pirata-z.github.io/Random-value-generator]: asdsad
+
+
+[link](url){:target="_blank"}
+
+# sss
