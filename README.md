@@ -25,6 +25,6 @@ Generates random value, based on a regular expression
 #EXAMPLES:
 
 
-[link](url){:target="_blank"}
+[link](http://pirata-z.github.io/Random-value-generator){:target="_blank"}
 
 # sss
