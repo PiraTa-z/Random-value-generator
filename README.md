@@ -24,4 +24,4 @@ Generates random value, based on a regular expression
 
 #EXAMPLES:
 
-[http://pirata-z.github.io/Random-value-generator]: http://pirata-z.github.io/Random-value-generator
+[http://pirata-z.github.io/Random-value-generator]: asdsad
