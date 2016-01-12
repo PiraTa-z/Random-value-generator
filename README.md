@@ -25,6 +25,4 @@ Generates random value, based on a regular expression
 #EXAMPLES:
 
 
-[link](http://pirata-z.github.io/Random-value-generator target="_blank")
-
-# sss
+[link](http://pirata-z.github.io/Random-value-generator)
