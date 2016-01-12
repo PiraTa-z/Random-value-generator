@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../src/valueGenerator.js"></script>
+    <style>
+        h3
+        {
+            font-family: Arial;
+        }
+
+        h6
+        {
+            border: dashed goldenrod 2px;
+            padding: 8px;
+            font-size: 15px;
+            font-family: Arial;
+        }
+        
+        .example
+        {
+            margin-bottom: 100px;
+        }
+        
+        .resultTitle
+        {
+            color: green;
+            font-size: 20px;;
+            font-family: Arial;
+            font-weight: 900;
+        }
+
+        .res
+        {
+            font-size: 20px;
+            font-family: Arial;
+            font-weight: 900;
+        }
+
+        #mainExample
+        {
+            margin-bottom: 140px;
+        }
+
+        #input
+        {
+            width: 400px;
+            height:20px;
+            padding-left:10px;
+        }
+
+        button
+        {
+            width: 100px;
+            font-family: Arial;
+            height:25px;
+            color:#fff;
+            border:none;
+            cursor: pointer;
+            background: yellowgreen;
+        }
+
+        #generated
+        {
+            padding: 10px;
+            margin-top: 30px;
+            border: solid goldenrod 2px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+
+        #usage
+        {
+            margin-bottom: 140px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="mainExample">
+    <h1>Test your reg-ex</h1>
+    <p></p>
+    <div>
+        <input type="text" placeholder="Enter your reg-ex" value="^[a-z0-9](\.?[a-z0-9]){5,}@gmail\.com$" id="input" />
+        <button id="gen">GENERATE</button>
+
+        <div id="generated">u4ksla@gmail.com</div>
+    </div>
+</div>
+
+
+<div class="example">
+    <h3>Random Date</h3>
+
+    <h5>REGEX: </h5>
+    <h6>(January|February|March|April|May|June|July|August|September|October|November|December) ([1-9]|[12][0-9]|3[01]), (19|20)[0-9][0-9]</h6>
+
+    <div><span class="resultTitle">Result: </span><span class="res"  id="resultDate"></span></div>
+</div>
+
+<div class="example">
+    <h3>Random Date</h3>
+
+    <h5>REGEX: </h5>
+    <h6>/[a-z0-9._+-]{1,20}@[a-z0-9]{3,15}\.[a-z]{2,4}/</h6>
+
+    <div><span class="resultTitle">Result: </span><span class="res" id="resultMail"></span></div>
+</div>
+
+<div class="example">
+    <h3>Random Date</h3>
+
+    <h5>REGEX: </h5>
+    <h6>\$([1-9]{1,3}(,\d{3}){0,3}|([1-9]{1,3}))(\.\d{2})?</h6>
+
+    <div><span class="resultTitle">Result: </span><span class="res"  id="resultCurrency"></span></div>
+</div>
+
+
+    <script>
+        var regexValueGenerator = new ValueGenerator();
+
+        var date = regexValueGenerator.generateValue(/(January|February|March|April|May|June|July|August|September|October|November|December) ([1-9]|[12][0-9]|3[01]), (19|20)[0-9][0-9]/);
+
+        document.getElementById('resultDate').innerHTML = date;
+
+
+        var mail = regexValueGenerator.generateValue(/[a-z0-9._+-]{1,20}@[a-z0-9]{3,15}\.[a-z]{2,4}/);
+        document.getElementById('resultMail').innerHTML = mail;
+
+
+        var currency = regexValueGenerator.generateValue(/\$([1-9]{1,3}(,\d{3}){0,3}|([1-9]{1,3}))(\.\d{2})?/);
+        document.getElementById('resultCurrency').innerHTML = currency;
+
+
+
+        document.getElementById('gen').addEventListener('click', function()
+        {
+            document.getElementById('generated').innerHTML = regexValueGenerator.generateValue(new RegExp(document.getElementById('input').value))
+        }, false);
+
+    </script>
+</body>
+</html>
