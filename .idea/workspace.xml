@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cacf7f2-bcc4-4a14-a103-f14a28eef0d1" name="Default" comment="" />
+    <list default="true" id="0cacf7f2-bcc4-4a14-a103-f14a28eef0d1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="value from regex.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +49,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.2680965">
-                <caret line="10" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="100" />
+              <first_editor vertical-scroll-proportion="0.8391421">
+                <caret line="32" column="100" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -375,8 +377,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.2680965">
-            <caret line="10" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="100" />
+          <first_editor vertical-scroll-proportion="0.8391421">
+            <caret line="32" column="100" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
             <folding />
           </first_editor>
           <second_editor />

@@ -30,9 +30,4 @@ Source file is in
 ## EXAMPLES:
 
 
-<<<<<<< HEAD
 [http://pirata-z.github.io/Random-value-generator](http://pirata-z.github.io/Random-value-generator)
-=======
-
-[link](http://pirata-z.github.io/Random-value-generator)
->>>>>>> ddcb928f4d643e085db0fada1fd8c75bf18a27e7
