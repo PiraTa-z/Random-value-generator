@@ -1,10 +1,15 @@
-Generates random value, based on a regular expression
+Generates random value, based on a regular expression.
+
+Minified vestion in dist folder.
+Source file is in
 
 
 # INSTALLATION: 
 
 
 ```
+    Include library in your HTML
+
     <script src="valueGenerator.js"></script>
 ```
 
@@ -22,6 +27,7 @@ Generates random value, based on a regular expression
 ```
 
 
-#EXAMPLES:
+## EXAMPLES:
 
-[http://pirata-z.github.io/Random-value-generator]: http://pirata-z.github.io/Random-value-generator
+
+[http://pirata-z.github.io/Random-value-generator](http://pirata-z.github.io/Random-value-generator)
