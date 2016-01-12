@@ -1,7 +1,8 @@
-Generates random value, based on a regular expression.
+####Generates random value, based on a regular expression.
 
-Minified vestion in dist folder.
-Source file is in
+
+Minified version: in dist folder.
+Source file: in src folder. (Typescript Version)
 
 
 # INSTALLATION: 
