@@ -2,9 +2,7 @@
  * Created by Irakli Zarandia on 1/5/2016.
  */
 
-module Helpers
-{
-    export class ValueGenerator
+class ValueGenerator
     {
         /**
          *
@@ -47,17 +45,17 @@ module Helpers
          * @type {{d: Array<string>, D: (T[]|Array<string>[]), w: (T[]|Array<string>[]), W: (T[]|Array<string>[]), t: string[], n: string[], v: string[], f: string[], r: string[], s: Array<string>, S: (T[]|Array<string>[]), 0: string[]}}
          */
         private static CLASSES: Object = {
-            'd' : RegexValueGenerator.DIGITS,
-            'D' : [].concat(RegexValueGenerator.UPPERS, RegexValueGenerator.LOWERS, RegexValueGenerator.SPACES, RegexValueGenerator.OTHERS, ['_']),
-            'w' : [].concat(RegexValueGenerator.UPPERS, RegexValueGenerator.LOWERS, RegexValueGenerator.DIGITS, ['_']),
-            'W' : [].concat(RegexValueGenerator.SPACES, RegexValueGenerator.OTHERS),
+            'd' : ValueGenerator.DIGITS,
+            'D' : [].concat(ValueGenerator.UPPERS, ValueGenerator.LOWERS, ValueGenerator.SPACES, ValueGenerator.OTHERS, ['_']),
+            'w' : [].concat(ValueGenerator.UPPERS, ValueGenerator.LOWERS, ValueGenerator.DIGITS, ['_']),
+            'W' : [].concat(ValueGenerator.SPACES, ValueGenerator.OTHERS),
             't' : [ '\t' ],
             'n' : [ '\n' ],
             'v' : [ '\u000B' ],
             'f' : [ '\u000C' ],
             'r' : [ '\r' ],
-            's' : RegexValueGenerator.SPACES,
-            'S' : [].concat(RegexValueGenerator.UPPERS, RegexValueGenerator.LOWERS, RegexValueGenerator.DIGITS, RegexValueGenerator.OTHERS, ['_']),
+            's' : ValueGenerator.SPACES,
+            'S' : [].concat(ValueGenerator.UPPERS, ValueGenerator.LOWERS, ValueGenerator.DIGITS, ValueGenerator.OTHERS, ['_']),
             '0' : [ '\0' ]
         };
 
@@ -262,7 +260,7 @@ module Helpers
                             if (escaped === 'b' || escaped === 'B') {
                                 throw "\\b and \\B is not supported";
                             }
-                            candinates = RegexValueGenerator.CLASSES[escaped];
+                            candinates = ValueGenerator.CLASSES[escaped];
                         }
 
                         if (!candinates)
@@ -483,4 +481,3 @@ module Helpers
             this._Counter = num;
         }
     }
-}
